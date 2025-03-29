@@ -2,46 +2,34 @@ import { Brand } from "@/types/brand";
 
 const brandsData: Brand[] = [
   {
-    id: 6,
-    name: "Formbold",
-    href: "https://formbold.com",
-    image: "/images/brands/formbold.svg",
-    imageLight: "/images/brands/formbold-light.svg",
-  },
-  {
     id: 1,
     name: "UIdeck",
     href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
-    imageLight: "/images/brands/uideck-light.svg",
+    image: "/images/brands/motial-oswal.jpg",
   },
   {
     id: 2,
     name: "Tailgrids",
     href: "https://tailgrids.com",
-    image: "/images/brands/tailgrids.svg",
-    imageLight: "/images/brands/tailgrids-light.svg",
+    image: "/images/brands/arihant-capital.png",
   },
   {
     id: 3,
     name: "Lineicons",
     href: "https://lineicons.com",
-    image: "/images/brands/lineicons.svg",
-    imageLight: "/images/brands/lineicons-light.svg",
+    image: "/images/brands/aditya-birla-group.webp",
   },
   {
     id: 4,
     name: "Tailadmin",
     href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
-    imageLight: "/images/brands/tailadmin-light.svg",
+    image: "/images/brands/hdfc-ergo.png",
   },
   {
-    id: 5,
-    name: "PlainAdmin",
-    href: "https://plainadmin.com",
-    image: "/images/brands/plainadmin.svg",
-    imageLight: "/images/brands/plainadmin-light.svg",
+    id: 6,
+    name: "Tata AIA",
+    href: "https://tata-aia.com",
+    image: "/images/brands/tata-aia.png",
   },
 ];
 

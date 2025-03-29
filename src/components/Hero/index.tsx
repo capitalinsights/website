@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
@@ -9,31 +10,48 @@ const Hero = () => {
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+            <div className="w-full flex flex-col max-md:space-y-12 lg:flex-row justify-between px-4">
+              <div className="md:pt-16 space-y-6">
+                <div className="flex gap-2 md:gap-6 items-center">
+                  <Image src="/images/logo/logo.png" alt="Logo" width={100} height={100} />
+                  <p className="text-base md:text-xl font-bold">
+                    Grow Your Wealth,
+                    <br /> Grow Your Dreams
+                  </p>
+                </div>
+                <h1 className="mb-5  text-3xl md:text-5xl uppercase font-bold leading-tight text-black dark:text-white  md:leading-tight">
+                  Tap One Click Trade any type of Financial products at one place
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+
+                <p className="text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                  We deal in all types of financial products, including Equity Market, Mutual Funds,
+                  Insurance, and other financial products. We have been active and sustained in the
+                  Indian market for the last 15 years. If you want to create a substantial corpus
+                  from your investments with just a single click, we can help.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+
+                <div className="flex items-center justify-start sm:flex-row space-x-4 ">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="/about"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
+                    Know More
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="/contact"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Star on GitHub
+                    Contact Us
                   </Link>
                 </div>
+              </div>
+              <div className="relative shadow-lg rounded-3xl md:rounded-full drop-shadow overflow-clip md:aspect-square max-md:w-auto h-[40vh] md:h-[65vh]">
+                <Image
+                  src="/images/hero/hero-image.jpeg"
+                  alt="Hero"
+                  fill
+                  className="md:aspect-square object-cover object-right"
+                />
               </div>
             </div>
           </div>
@@ -46,24 +64,9 @@ const Hero = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
+            <circle cx="277" cy="63" r="225" fill="url(#paint0_linear_25:217)" />
+            <circle cx="17.9997" cy="182" r="18" fill="url(#paint1_radial_25:217)" />
+            <circle cx="76.9997" cy="288" r="34" fill="url(#paint2_radial_25:217)" />
             <circle
               cx="325.486"
               cy="302.87"

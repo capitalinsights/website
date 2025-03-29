@@ -12,7 +12,7 @@ const Video = () => {
       <div className="container">
         <SectionTitle
           title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="At Capital Insights, we are committed to helping our clients achieve their financial goals and aspirations. Whether you're an individual investor, a corporate entity, or an institutional investor, we invite you to experience the Capital Insights difference."
           center
           mb="80px"
         />

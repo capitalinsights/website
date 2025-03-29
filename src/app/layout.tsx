@@ -18,12 +18,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </Providers>
+        <Header />
+        {children}
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

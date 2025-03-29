@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -52,13 +51,13 @@ const Header = () => {
             <div className="max-w-full px-4 xl:mr-12">
               <Link href="/" className={`header-logo py-2 w-full inline-flex items-center gap-2`}>
                 <div className="h-12 w-[3.5rem] relative ">
-                  <Image src="/images/logo/logo.png" alt="logo" fill />
+                  <Image src="/images/logo/logo.png" alt="logo" fill objectFit="contain" />
                 </div>
                 <h1 className="whitespace-nowrap font-bold uppercase">Capital Insights</h1>
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
-              <div>
+              <div className="w-auto lg:w-3/4">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
@@ -89,7 +88,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  <ul className="block lg:flex w-full justify-center lg:space-x-12">
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
@@ -143,9 +142,14 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              <div className="hidden lg:flex items-center justify-end pr-16 lg:pr-0">
                 <div>
-                  <ThemeToggler />
+                  <Link
+                    href="/contact"
+                    className="inline-block rounded-sm bg-black px-4 py-2 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                  >
+                    Contact Us
+                  </Link>
                 </div>
               </div>
             </div>
