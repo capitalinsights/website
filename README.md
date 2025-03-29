@@ -1,2 +1,4 @@
 # Capital Insights
-## Build Number : 2
+## Build Number : 3
+
+- Home Page Ready
