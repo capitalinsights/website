@@ -1,5 +1,7 @@
 # Capital Insights
-## Build Number : 5
+## Build Number : 7
 
-- Home Page Ready
-- Contact Page Ready
+- Home Page
+- Contact Page
+- About Page
+- Services Page
