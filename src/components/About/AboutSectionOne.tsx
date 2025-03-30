@@ -8,14 +8,14 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
+  // const List = ({ text }) => (
+  //   <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+  //     <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+  //       {checkIcon}
+  //     </span>
+  //     {text}
+  //   </p>
+  // );
 
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
@@ -24,44 +24,31 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Mayankesh Kaushik, Co-Founder & CEO"
+                paragraph="Founder of Capital Insights, is a leading
+financial and investment expert in India,
+certified by National Institute of Securities
+Markets (NISM) and National Stock Exchange
+(NSE). He has excelled in his field, leveraging
+extensive stock market experience to
+manage high-value portfolios worth crores,
+including his own. Renowned for his expertise
+in technical and fundamental analysis,
+personal finance, and market research, he
+consistently delivers exceptional annual
+returns of 30-40%."
                 mb="44px"
               />
-
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+              <div className="relative mx-auto h-[70vh] rounded-xl overflow-clip w-auto lg:mr-0">
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/about/founder.jpg"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
+                  objectFit="cover"
+                  className="mx-auto max-w-full rounded-xl drop-shadow-three lg:mr-0"
                 />
               </div>
             </div>

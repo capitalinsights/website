@@ -1,12 +1,13 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Testimonials from "@/components/Testimonials";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | Free Next.js Template for Startup and SaaS",
-  description: "This is About Page for Startup Nextjs Template",
+  title: "About Us | Capital Insights",
+  description: "About Page For Capital Insights",
   // other metadata
 };
 
@@ -14,11 +15,11 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Your Money, Handled by Expert"
+        description="Embark on a visual journey through our gallery, where innovation meets creativity, showcasing a tapestry of successful projects and unparalleled expertise that  defines Thynk Unlimited's commitment to excellence."
       />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      <Testimonials />
     </>
   );
 };
