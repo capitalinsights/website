@@ -1,3 +1,4 @@
+import { MAIN_LINE } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ const Hero = () => {
                   </p>
                 </div>
                 <h1 className="mb-5  text-3xl md:text-5xl uppercase font-bold leading-tight text-black dark:text-white  md:leading-tight">
-                  Tap One Click Trade any type of Financial products at one place
+                  {MAIN_LINE}
                 </h1>
 
                 <p className="text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">

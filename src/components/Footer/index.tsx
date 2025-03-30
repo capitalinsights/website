@@ -1,4 +1,5 @@
 "use client";
+import { MAIN_LINE } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Tap One Click Trade any type of Financial products at one place
+                  {MAIN_LINE}
                 </p>
                 <div className="flex items-center">
                   <a

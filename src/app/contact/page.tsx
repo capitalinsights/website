@@ -4,9 +4,8 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
-  // other metadata
+  title: "Contact Us | Capital Insights",
+  description: "Contact Page for Capital Insights",
 };
 
 const ContactPage = () => {
@@ -14,7 +13,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Get in touch with us for any inquiries or support. We're here to help and look forward to connecting with you!"
       />
 
       <Contact />
