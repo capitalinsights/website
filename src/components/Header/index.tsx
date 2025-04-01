@@ -145,9 +145,7 @@ const Header = () => {
               <div className="hidden lg:flex items-center justify-end pr-16 lg:pr-0">
                 <div>
                   <Link
-                   //  href="/contact"
-                       href="/"
-
+                    href="/contact"
                     className="inline-block rounded-sm bg-black px-4 py-2 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Contact Us

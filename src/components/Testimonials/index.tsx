@@ -5,29 +5,74 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Shankar Dyal Sharma",
+    designation: "Businessman & Trader Since 2007",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "Capital Insights has been instrumental in growing my capital in the Financial market. Their strategies delivered impressive return in a short period. Highly recommend their service for anyone looking to maximize their investment. Their team is highly knowledgeable and dedicated, offering personalized financial strategies.",
+    image: "/images/testimonials/shankar-dyal-sharma.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Pooja Rawat",
+    designation: "Businesswoman",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "Working with capital insights has been an excellent experience. I appreciate their attention to detail and the clear guidance they provide throughout the investment process. Their expertise in this stock market has help me grow my capital significantly delivery impressive return in a short period.",
+    image: "/images/testimonials/pooja-rawat.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Deepak Singh",
+    designation: "Manager in Letstrack",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "Capital Insights has been a game changer for me. Their expert strategies have helped me grow my capital in the Investment market delivering impressive return in a short time. I highly recommend their service for anyone looking to make smart profitable investment that have helped me increase my capital in the investment market significantly.",
+    image: "/images/testimonials/deepak-singh.png",
+    star: 5,
+  },
+  {
+    id: 4,
+    name: "Sheetal Vashishtha",
+    designation: "Adv & Legal Advisor",
+    content:
+      "I have been working with capital insights for a while now. The team provides clear actionable strategies to my financial goals. The team consistently delivers valuable insights, enabling me to make informed decisions with confidence. I am extremely satisfied with the result and their professional approach.",
+    image: "/images/testimonials/Sheetal-Vashishtha.png",
+    star: 5,
+  },
+  {
+    id: 5,
+    name: "Pranjal Gupta",
+    designation: "Happy Client",
+    content:
+      "What sets Capital Insights apart is not just your deep knowledge of the investment market but also the personalized approach you bring to each client. The team took the time to thoroughly understand my financial goals, risk tolerance, and longterm aspirations. This level of attention to detail instilled a great sense of trust and confidence.",
+    image: "/images/testimonials/pranjal-gupta.png",
+    star: 5,
+  },
+  {
+    id: 6,
+    name: "Itika Chawla",
+    designation: "College Student",
+    content:
+      "Thank you for your dedication for consistently going above and beyond to deliver outstanding results. I am grateful for the positive impact Capital Insights has had on my financial journey, I would wholeheart recommend your services to anyone seeking reliable, effective, and client-focused financial expertise.",
+    image: "/images/testimonials/itika-chawla.png",
+    star: 5,
+  },
+  {
+    id: 7,
+    name: "Ranjeet Singh",
+    designation: "Software Engineer in Ixambee",
+    content:
+      "I want to take a moment to express my deepest appreciation for the outstanding service provided by Capital Insights. The expertise and dedication demonstrated in helping me grow my capital in the investment market. It was clear that your organization is committed to delivering exceptional financial solutions tailored to individual needs.",
+    image: "/images/testimonials/ranjeet-singh.png",
+    star: 5,
+  },
+  {
+    id: 8,
+    name: "Girish Sharma",
+    designation: "Deputy Manager in HDFC Bank",
+    content:
+      "The team consistently delivers valuable insights, enabling me to make informed decisions with confidence. I highly recommend Capital Insights to anyone looking to grow their portfolio and achieve their financial goals. Thank you for your excellent work!",
+    image: "/images/testimonials/girish-sharma.png",
     star: 5,
   },
 ];
@@ -37,8 +82,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Reviews by Happy Clients"
+          paragraph="Real voices, real results – see what our clients are saying about the transformative impact of our solutions."
           center
         />
 
