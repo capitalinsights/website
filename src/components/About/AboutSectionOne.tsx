@@ -24,7 +24,7 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Mayankesh Kaushik, Co-Founder & CEO"
+                title="Mayankesh Kaushik, Co-Founder"
                 paragraph="Founder of Capital Insights, is a leading
 financial and investment expert in India,
 certified by National Institute of Securities
