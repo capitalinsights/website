@@ -8,40 +8,32 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  // const List = ({ text }) => (
-  //   <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-  //     <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-  //       {checkIcon}
-  //     </span>
-  //     {text}
-  //   </p>
-  // );
-
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Mayankesh Kaushik, Co-Founder & CEO"
-                paragraph="Founder of Capital Insights, is a leading
-financial and investment expert in India,
-certified by National Institute of Securities
-Markets (NISM) and National Stock Exchange
-(NSE). He has excelled in his field, leveraging
-extensive stock market experience to
-manage high-value portfolios worth crores,
-including his own. Renowned for his expertise
-in technical and fundamental analysis,
-personal finance, and market research, he
-consistently delivers exceptional annual
-returns of 30-40%."
-                mb="44px"
-              />
+            <div className="w-full px-4 lg:w-7/12">
+              <div className={"w-full max-md:text-center mb-4"}>
+                <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Mayankesh Kaushik
+                </h2>
+                <h6 className="mb-4 text-xl font-extrabold !leading-tight text-black dark:text-white sm:text-3xl">
+                  (Co-Founder)
+                </h6>
+                <p className="text-base !leading-relaxed text-body-color md:text-lg">
+                  Founder of Capital Insights, is a leading financial and investment expert in
+                  India, certified by National Institute of Securities Markets (NISM) and National
+                  Stock Exchange (NSE). He has excelled in his field, leveraging extensive stock
+                  market experience to manage high-value portfolios worth crores, including his own.
+                  Renowned for his expertise in technical and fundamental analysis, personal
+                  finance, and market research, he consistently delivers exceptional annual returns
+                  of 30-40%.
+                </p>
+              </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-5/12">
               <div className="relative mx-auto h-[70vh] rounded-xl overflow-clip w-auto lg:mr-0">
                 <Image
                   src="/images/about/founder.jpg"
