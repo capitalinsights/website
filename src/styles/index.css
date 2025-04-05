@@ -35,3 +35,12 @@
 .h {
   border: 1px solid red;
 }
+
+.cardBg {
+  background: #fafafa; /* fallback for old browsers */
+  background: linear-gradient(
+    to bottom right,
+    #fafafa,
+    #d7dffc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

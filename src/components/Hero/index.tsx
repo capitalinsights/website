@@ -14,13 +14,13 @@ const Hero = () => {
             <div className="w-full flex flex-col max-md:space-y-12 lg:flex-row justify-between px-4">
               <div className="md:pt-16 space-y-6">
                 <div className="flex gap-2 md:gap-6 items-center">
-                  <Image src="/images/logo/logo.png" alt="Logo" width={100} height={100} />
-                  <p className="text-base md:text-xl font-bold">
+                  {/* <Image src="/images/logo/logo.png" alt="Logo" width={100} height={100} /> */}
+                  {/* <p className="text-base md:text-xl font-bold">
                     Grow Your Wealth,
                     <br /> Grow Your Dreams
-                  </p>
+                  </p> */}
                 </div>
-                <h1 className="mb-5  text-3xl md:text-5xl uppercase font-bold leading-tight text-black dark:text-white  md:leading-tight">
+                <h1 className="mb-5  text-3xl md:text-5xl capitalize font-bold leading-tight text-black dark:text-white  md:leading-tight">
                   {MAIN_LINE}
                 </h1>
 
