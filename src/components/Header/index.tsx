@@ -37,6 +37,10 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+  useEffect(() => {
+    setNavbarOpen(false);
+  }, [usePathName]);
+
   return (
     <>
       <header

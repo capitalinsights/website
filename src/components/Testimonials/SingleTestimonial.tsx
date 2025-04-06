@@ -19,23 +19,21 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   }
 
   return (
-    <div className="w-full">
-      <div className="rounded-sm bg-white p-6 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
+    <div data-aos="fade-up" className="w-full md:w-2/5">
+      <div className="rounded-lg bg-white min-h-[30vh] p-6 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
         <div className="flex items-center">
           <div className="relative mr-4 h-[70px] w-full max-w-[70px] overflow-hidden rounded-full">
             <Image src={image} alt={name} fill />
           </div>
           <div className="w-full">
-            <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
+            <h3 className="mb-0.5 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
               {name}
             </h3>
-            <p className="text-sm mb-2 text-body-color">{designation}</p>
+            <p className="text-xs mb-1 text-body-color">{designation}</p>
             <div className="mb-2 flex items-center space-x-1">{ratingIcons}</div>
           </div>
         </div>
-        <p className="mb-4 border-b border-body-color border-opacity-10 pb-2 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
-          “{content}”
-        </p>
+        <p className="text-sm py-2 text-body-color dark:text-white">“{content}”</p>
       </div>
     </div>
   );

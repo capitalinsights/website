@@ -15,8 +15,8 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Your Money, Handled by Expert"
-        description="Embark on a visual journey through our gallery, where innovation meets creativity, showcasing a tapestry of successful projects and unparalleled expertise that  defines Thynk Unlimited's commitment to excellence."
+        pageName="Your Wealth, Handled by Experts"
+        description="Meet the team behind the strategies and hear from clients who’ve experienced real results. Explore our story, our values, and the impact we strive to make every day."
       />
       <AboutSectionOne />
       <Testimonials />
