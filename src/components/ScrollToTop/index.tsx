@@ -7,7 +7,7 @@ export default function ScrollToTop() {
       onClick={() =>
         window.open("https://api.whatsapp.com/send?phone=9870317807&text=Hi", "_blank")
       }
-      className="fixed md:bottom-10 bottom-4 right-4 h-24 w-24 rounded-full md:right-10 z-[99]"
+      className="fixed md:bottom-10 bottom-2 right-2 h-20 w-20 rounded-full md:right-10 z-[99]"
     >
       <Image
         src="/images/whatsapp.svg"

@@ -33,6 +33,7 @@ const Contact = () => {
       }
       toast.success("Message sent successfully", { id: t });
       sessionStorage.setItem("form-submitted", "true");
+      setAlreadySubmitted(true);
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong", { id: t });

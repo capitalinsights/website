@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8 flex items-center justify-center">
             <p className="text-center text-base text-body-color dark:text-white">
-              &copy; 2025 - Capital Insights
+              Copyright by Capital Insights. All Rights Reserved
             </p>
             {/* <div className="flex items-center">
               <a

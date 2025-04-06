@@ -57,7 +57,10 @@ const Header = () => {
                 <div className="h-12 w-[3.5rem] relative ">
                   <Image src="/images/logo/logo.png" alt="logo" fill objectFit="contain" />
                 </div>
-                <h1 className="whitespace-nowrap font-bold uppercase">Capital Insights</h1>
+                <div className="">
+                  <h1 className="whitespace-nowrap font-bold uppercase">Capital Insights</h1>
+                  <p className="text-xs whitespace-nowrap">Grow Your Wealth, Grow Your Dreams</p>
+                </div>
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">

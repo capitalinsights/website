@@ -22,13 +22,13 @@ const AboutSectionOne = () => {
                   (Co-Founder)
                 </h6>
                 <p className="text-base !leading-relaxed text-body-color md:text-lg">
-                  Founder of Capital Insights, is a leading financial and investment expert in
-                  India, certified by National Institute of Securities Markets (NISM) and National
-                  Stock Exchange (NSE). He has excelled in his field, leveraging extensive stock
-                  market experience to manage high-value portfolios worth crores, including his own.
-                  Renowned for his expertise in technical and fundamental analysis, personal
-                  finance, and market research, he consistently delivers exceptional annual returns
-                  of 30-40%.
+                  Mayankesh Kaushik, The Founder of Capital Insights, is a leading financial and
+                  investment expert in India, certified by National Institute of Securities Markets
+                  (NISM) and National Stock Exchange (NSE). He has excelled in his field, leveraging
+                  extensive stock market experience to manage high-value portfolios worth crores,
+                  including his own. Renowned for his expertise in technical and fundamental
+                  analysis, personal finance, and market research, he consistently delivers
+                  exceptional annual returns of 30-40%.
                 </p>
               </div>
             </div>
