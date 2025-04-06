@@ -19,8 +19,8 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   }
 
   return (
-    <div className="w-full md:w-2/5">
-      <div className="rounded-lg bg-white p-6 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
+    <div data-aos="fade-up" className="w-full md:w-2/5">
+      <div className="rounded-lg bg-white min-h-[30vh] p-6 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
         <div className="flex items-center">
           <div className="relative mr-4 h-[70px] w-full max-w-[70px] overflow-hidden rounded-full">
             <Image src={image} alt={name} fill />

@@ -5,7 +5,7 @@ const Breadcrumb = ({ pageName, description }: { pageName: string; description: 
   return (
     <>
       <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
-        <div className="container">
+        <div data-aos="fade-down" className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 mx-auto md:w-8/12 lg:w-7/12">
               <div className="mb-8 text-center md:mb-0 lg:mb-12">

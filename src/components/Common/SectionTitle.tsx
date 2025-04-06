@@ -14,6 +14,7 @@ const SectionTitle = ({
   return (
     <>
       <div
+        data-aos="fade-up"
         className={`w-full ${center ? "mx-auto text-center" : ""}`}
         style={{ maxWidth: width, marginBottom: mb }}
       >

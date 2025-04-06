@@ -13,7 +13,7 @@ const AboutSectionOne = () => {
       <div className="container">
         <div className="border-b border-body-color/[.15] sm:pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-7/12">
+            <div data-aos="fade-right" className="w-full px-4 lg:w-7/12">
               <div className={"w-full max-md:text-center mb-4"}>
                 <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
                   Mayankesh Kaushik
@@ -33,7 +33,7 @@ const AboutSectionOne = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-5/12">
+            <div data-aos="fade-left" className="w-full px-4 lg:w-5/12">
               <div className="relative mx-auto h-[70vh] rounded-xl overflow-clip w-auto lg:mr-0">
                 <Image
                   src="/images/about/founder.jpg"

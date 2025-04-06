@@ -35,17 +35,13 @@ const Contact = () => {
       setLoading(false);
     }
   };
-  const alreadySubmitted = !!sessionStorage.getItem("form-submitted");
+  const alreadySubmitted = !!window?.sessionStorage?.getItem("form-submitted");
   return (
     <section id="contact" className="overflow-hidden">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full lg:w-7/12 xl:w-8/12 px-4">
-            <div
-              className="mb-12 rounded-xl border border-slate-200 bg-slate-100 px-8 py-11 shadow-three sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
-            >
+            <div className="mb-12 rounded-xl border border-slate-200 bg-slate-100 px-8 py-11 shadow-three sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Need Help? Connect with us
               </h2>

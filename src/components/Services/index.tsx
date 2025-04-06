@@ -6,7 +6,11 @@ export function FeaturesSection() {
     <div className="p-4 pb-20">
       <div className="flex flex-wrap items-start justify-center gap-10 max-w-screen-2xl mx-auto">
         {services.map((feature, idx) => (
-          <div className="w-72 h-[50vh] rounded-lg bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] px-5 py-2 space-y-1 relative overflow-hidden">
+          <div
+            data-aos="fade-up"
+            key={idx}
+            className="w-72 h-[50vh] rounded-lg bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] px-5 py-2 space-y-1 relative overflow-hidden"
+          >
             <div className="w-24 h-24 bg-primary rounded-full absolute top-0 -translate-y-[40%] right-0 translate-x-[40%]">
               <p className="absolute -translate-y-1/2 bottom-0 left-1/3 -translate-x-1/2 text-white text-2xl">
                 {idx + 1}

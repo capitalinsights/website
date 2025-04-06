@@ -12,14 +12,7 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full flex flex-col max-md:space-y-12 lg:flex-row justify-between px-4">
-              <div className="md:pt-16 space-y-6">
-                <div className="flex gap-2 md:gap-6 items-center">
-                  {/* <Image src="/images/logo/logo.png" alt="Logo" width={100} height={100} /> */}
-                  {/* <p className="text-base md:text-xl font-bold">
-                    Grow Your Wealth,
-                    <br /> Grow Your Dreams
-                  </p> */}
-                </div>
+              <div data-aos="fade-right" className="md:pt-16 space-y-6">
                 <h1 className="mb-5  text-3xl md:text-5xl capitalize font-bold leading-tight text-black dark:text-white  md:leading-tight">
                   {MAIN_LINE}
                 </h1>
@@ -46,7 +39,10 @@ const Hero = () => {
                   </Link>
                 </div>
               </div>
-              <div className="relative shadow-lg rounded-3xl md:rounded-full drop-shadow overflow-clip md:aspect-square max-md:w-auto h-[40vh] md:h-[65vh]">
+              <div
+                data-aos="fade-left"
+                className="relative shadow-lg rounded-3xl md:rounded-full drop-shadow overflow-clip md:aspect-square max-md:w-auto h-[40vh] md:h-[65vh]"
+              >
                 <Image
                   src="/images/hero/hero-image.jpeg"
                   alt="Hero"

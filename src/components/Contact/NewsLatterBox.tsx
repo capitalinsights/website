@@ -11,12 +11,12 @@ const AddressDetails = () => {
       <div>
         <div className="mb-4 text-base text-body-color dark:text-body-color-dark">
           <strong>Address:</strong>
-          <p className="text-dark">1234 Elm Street, Suite 567, City, Country</p>
+          <p className="text-dark capitalize">479, 1st floor, Dwarka sec 27, New Delhi,110077</p>
         </div>
 
         <div className="mb-4 text-base text-body-color dark:text-body-color-dark">
           <strong>Email:</strong>
-          <p className="text-dark">contact@company.com</p>
+          <p className="text-dark">capitalinsightsfs@gmail.com</p>
         </div>
       </div>
 

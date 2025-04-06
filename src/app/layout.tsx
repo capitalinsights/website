@@ -3,23 +3,21 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
-import { Inter } from "next/font/google";
 import "../styles/index.css";
 import { Toaster } from "react-hot-toast";
-
-const inter = Inter({ subsets: ["latin"] });
+import AOSProvider from "@/lib/aos";
+import "node_modules/react-modal-video/css/modal-video.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC]`}>
+        <ScrollToTop />
         <Toaster />
         <Header />
-        {children}
+        <AOSProvider>{children}</AOSProvider>
         <Footer />
-        <ScrollToTop />
       </body>
     </html>
   );
