@@ -1,8 +1,7 @@
 "use client";
 import { SCRIPT_URL } from "@/utils/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import NewsLatterBox from "./NewsLatterBox";
 import AddressDetails from "./NewsLatterBox";
 
 const Contact = () => {
@@ -11,7 +10,13 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [alreadySubmitted, setAlreadySubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    if (!!window?.sessionStorage?.getItem("form-submitted")) {
+      setAlreadySubmitted(true);
+    }
+  }, []);
   const handleSubmit = async (e: React.FormEvent) => {
     setLoading(true);
     const t = toast.loading("Sending...");
@@ -35,7 +40,6 @@ const Contact = () => {
       setLoading(false);
     }
   };
-  const alreadySubmitted = !!window?.sessionStorage?.getItem("form-submitted");
   return (
     <section id="contact" className="overflow-hidden">
       <div className="container">

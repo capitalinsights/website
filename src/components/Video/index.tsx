@@ -47,7 +47,6 @@ const Video = () => {
         start={true}
         isOpen={isOpen}
         ratio="9:16"
-        // videoId="L61p2uyiMSo"=
         onClose={() => setOpen(false)}
       />
 
