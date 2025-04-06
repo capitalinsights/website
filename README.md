@@ -1,6 +1,6 @@
 # Capital Insights
 
-## Build Number : 8
+## Build Number : 9
 
 - Home Page
 - Contact Page
