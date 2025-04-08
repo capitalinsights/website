@@ -4,9 +4,16 @@ import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import ModalVideo from "react-modal-video";
+import { useStickyNavbar } from "@/hooks/use-sticky-nav";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
+  const { setSticky } = useStickyNavbar();
+  const handleVideoOpen = () => {
+    setOpen(true);
+    setSticky(false);
+    document.body.style.overflow = "hidden";
+  };
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
@@ -21,12 +28,19 @@ const Video = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto max-w-[770px] overflow-hidden rounded-md">
-              <div className="relative aspect-[77/40]  items-center justify-center">
-                <Image src="/images/video/video.jpg" objectFit="cover" alt="video image" fill />
+              <div className="relative aspect-[40/77] h-[70vh] w-full items-center justify-center">
+                <Image
+                  quality={100}
+                  loading="lazy"
+                  src="/images/video/video.png"
+                  objectFit="contain"
+                  alt="video image"
+                  fill
+                />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
-                    onClick={() => setOpen(true)}
+                    onClick={handleVideoOpen}
                     className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
                   >
                     <svg width="16" height="18" viewBox="0 0 16 18" className="fill-current">
@@ -42,12 +56,23 @@ const Video = () => {
 
       <ModalVideo
         channel="custom"
+        classNames={{
+          modalVideoEffect: "modal-video-effect",
+          modalVideo: "modal-video",
+          modalVideoClose: "modal-video-close",
+          modalVideoBody: "modal-video-body",
+          modalVideoInner: "modal-video-inner",
+          modalVideoIframeWrap: "modal-video-movie-wrap",
+          modalVideoCloseBtn: "modal-video-close-btn bg-black",
+        }}
         url="/video.mp4"
-        autoplay={true}
-        start={true}
         isOpen={isOpen}
         ratio="9:16"
-        onClose={() => setOpen(false)}
+        onClose={() => {
+          setOpen(false);
+          setSticky(true);
+          document.body.style.overflow = "";
+        }}
       />
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>

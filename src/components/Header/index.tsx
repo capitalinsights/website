@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
+import { useStickyNavbar } from "@/hooks/use-sticky-nav";
 
 const Header = () => {
   // Navbar toggle
@@ -12,18 +13,7 @@ const Header = () => {
     setNavbarOpen(!navbarOpen);
   };
 
-  // Sticky Navbar
-  const [sticky, setSticky] = useState(false);
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
-  });
+  const { sticky } = useStickyNavbar();
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);

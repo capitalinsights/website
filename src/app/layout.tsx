@@ -7,17 +7,20 @@ import "../styles/index.css";
 import { Toaster } from "react-hot-toast";
 import AOSProvider from "@/lib/aos";
 import "node_modules/react-modal-video/css/modal-video.css";
+import { StickyNavbarProvider } from "@/hooks/use-sticky-nav";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning lang="en">
       <head />
       <body className={`bg-[#FCFCFC]`}>
-        <ScrollToTop />
-        <Toaster />
-        <Header />
-        <AOSProvider>{children}</AOSProvider>
-        <Footer />
+        <StickyNavbarProvider>
+          <ScrollToTop />
+          <Toaster />
+          <Header />
+          <AOSProvider>{children}</AOSProvider>
+          <Footer />
+        </StickyNavbarProvider>
       </body>
     </html>
   );
