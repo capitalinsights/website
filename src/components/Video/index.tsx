@@ -56,15 +56,6 @@ const Video = () => {
 
       <ModalVideo
         channel="custom"
-        classNames={{
-          modalVideoEffect: "modal-video-effect",
-          modalVideo: "modal-video",
-          modalVideoClose: "modal-video-close",
-          modalVideoBody: "modal-video-body",
-          modalVideoInner: "modal-video-inner",
-          modalVideoIframeWrap: "modal-video-movie-wrap",
-          modalVideoCloseBtn: "modal-video-close-btn bg-black",
-        }}
         url="/video.mp4"
         isOpen={isOpen}
         ratio="9:16"
