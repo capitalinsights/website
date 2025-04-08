@@ -36,6 +36,8 @@ const AboutSectionOne = () => {
             <div data-aos="fade-left" className="w-full px-4 lg:w-5/12">
               <div className="relative mx-auto h-[70vh] rounded-xl overflow-clip w-auto lg:mr-0">
                 <Image
+                  quality={100}
+                  loading="lazy"
                   src="/images/about/founder.jpg"
                   alt="about-image"
                   fill
