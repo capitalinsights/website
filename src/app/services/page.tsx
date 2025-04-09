@@ -1,10 +1,6 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Pricing from "@/components/Pricing";
 import { FeaturesSection } from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
 
 import { Metadata } from "next";
 
