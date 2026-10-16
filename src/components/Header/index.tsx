@@ -42,46 +42,50 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="max-w-full px-4 xl:mr-12">
-              <Link href="/" className={`header-logo py-2 w-full inline-flex items-center gap-2`}>
-                <div className="h-12 w-[3.5rem] relative ">
+            <div className="max-w-[calc(100%-64px)] px-4 lg:max-w-none lg:w-auto xl:mr-12">
+              <Link href="/" className={`header-logo py-2 flex items-center gap-2`}>
+                <div className="h-10 w-10 sm:h-12 sm:w-[3.5rem] relative shrink-0">
                   <Image src="/images/logo/logo.png" alt="logo" fill className="object-contain" />
                 </div>
-                <div className="">
-                  <h1 className="whitespace-nowrap font-bold uppercase">Capital Insights</h1>
-                  <p className="text-xs whitespace-nowrap">Grow Your Wealth, Grow Your Dreams</p>
+                <div className="min-w-0">
+                  <h1 className="whitespace-nowrap font-bold uppercase text-sm sm:text-base text-black dark:text-white">
+                    Capital Insights
+                  </h1>
+                  <p className="text-[10px] sm:text-xs text-body-color dark:text-body-color-dark whitespace-nowrap hidden sm:block">
+                    Grow Your Wealth, Grow Your Dreams
+                  </p>
                 </div>
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex items-center justify-end px-4 lg:w-full lg:justify-between">
               <div className="w-auto lg:w-3/4">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="relative z-50 block rounded-lg px-2 py-1.5 ring-primary focus:ring-2 lg:hidden cursor-pointer"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[26px] bg-black transition-all duration-300 dark:bg-white ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[26px] bg-black transition-all duration-300 dark:bg-white ${
                       navbarOpen ? "opacity-0 " : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[26px] bg-black transition-all duration-300 dark:bg-white ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-4 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
-                      ? "visibility top-full opacity-100"
+                      ? "visibility top-full opacity-100 shadow-lg"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >

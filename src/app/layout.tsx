@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body className={`bg-[#FCFCFC]`}>
+      <body className={`bg-[#FCFCFC] overflow-x-hidden`}>
         <StickyNavbarProvider>
           <ScrollToTop />
           <Toaster />
