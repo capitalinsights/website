@@ -30,15 +30,15 @@ const testimonialData: Testimonial[] = [
     image: "/images/testimonials/deepak-singh.png",
     star: 5,
   },
-  {
-    id: 4,
-    name: "Sheetal Vashishtha",
-    designation: "Adv & Legal Advisor",
-    content:
-      "I have been working with capital insights for a while now. The team provides clear actionable strategies to my financial goals. The team consistently delivers valuable insights, enabling me to make informed decisions with confidence. I am extremely satisfied with the result and their professional approach.",
-    image: "/images/testimonials/Sheetal-Vashishtha.png",
-    star: 5,
-  },
+  // {
+  //   id: 4,
+  //   name: "Sheetal Vashishtha",
+  //   designation: "Adv & Legal Advisor",
+  //   content:
+  //     "I have been working with capital insights for a while now. The team provides clear actionable strategies to my financial goals. The team consistently delivers valuable insights, enabling me to make informed decisions with confidence. I am extremely satisfied with the result and their professional approach.",
+  //   image: "/images/testimonials/Sheetal-Vashishtha.png",
+  //   star: 5,
+  // },
   {
     id: 5,
     name: "Pranjal Gupta",

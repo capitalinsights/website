@@ -45,7 +45,7 @@ const Header = () => {
             <div className="max-w-full px-4 xl:mr-12">
               <Link href="/" className={`header-logo py-2 w-full inline-flex items-center gap-2`}>
                 <div className="h-12 w-[3.5rem] relative ">
-                  <Image src="/images/logo/logo.png" alt="logo" fill objectFit="contain" />
+                  <Image src="/images/logo/logo.png" alt="logo" fill className="object-contain" />
                 </div>
                 <div className="">
                   <h1 className="whitespace-nowrap font-bold uppercase">Capital Insights</h1>

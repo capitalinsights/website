@@ -33,7 +33,7 @@ const Video = () => {
                   quality={100}
                   loading="lazy"
                   src="/images/video/video.png"
-                  objectFit="contain"
+                  className="object-contain"
                   alt="video image"
                   fill
                 />
