@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-import ModalVideo from "react-modal-video";
+import VideoModal from "./VideoModal";
 import { useStickyNavbar } from "@/hooks/use-sticky-nav";
 
 const Video = () => {
@@ -54,15 +54,12 @@ const Video = () => {
         </div>
       </div>
 
-      <ModalVideo
-        channel="custom"
-        url="/video.mp4"
+      <VideoModal
+        videoSrc="/video.mp4"
         isOpen={isOpen}
-        ratio="9:16"
         onClose={() => {
           setOpen(false);
           setSticky(true);
-          document.body.style.overflow = "";
         }}
       />
 
