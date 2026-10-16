@@ -41,8 +41,7 @@ const AboutSectionOne = () => {
                   src="/images/about/founder.jpg"
                   alt="about-image"
                   fill
-                  objectFit="contain"
-                  className="mx-auto max-w-full rounded-xl drop-shadow-three h-fit lg:mr-0"
+                  className="mx-auto max-w-full rounded-xl drop-shadow-three h-fit lg:mr-0 object-contain"
                 />
               </div>
             </div>
