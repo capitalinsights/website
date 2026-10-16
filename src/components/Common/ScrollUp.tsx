@@ -4,7 +4,11 @@ import { useEffect } from "react";
 
 export default function ScrollUp() {
   useEffect(() => {
-    window.document.scrollingElement?.scrollTo(0, 0);
+    try {
+      window.document.scrollingElement?.scrollTo(0, 0);
+    } catch {
+      // Safe fallback for browsers/environments where scrollTo is restricted
+    }
   }, []);
 
   return null;

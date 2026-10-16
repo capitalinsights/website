@@ -13,8 +13,12 @@ const Contact = () => {
   const [alreadySubmitted, setAlreadySubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    if (!!window?.sessionStorage?.getItem("form-submitted")) {
-      setAlreadySubmitted(true);
+    try {
+      if (typeof window !== "undefined" && window.sessionStorage?.getItem("form-submitted")) {
+        setAlreadySubmitted(true);
+      }
+    } catch {
+      // Ignore storage access errors (common in Android Chrome Incognito or In-App WebViews)
     }
   }, []);
   const handleSubmit = async (e: React.FormEvent) => {
@@ -32,7 +36,13 @@ const Contact = () => {
         throw Error("Something went wrong");
       }
       toast.success("Message sent successfully", { id: t });
-      sessionStorage.setItem("form-submitted", "true");
+      try {
+        if (typeof window !== "undefined") {
+          window.sessionStorage?.setItem("form-submitted", "true");
+        }
+      } catch {
+        // Ignore storage errors in restricted browsing modes
+      }
       setAlreadySubmitted(true);
     } catch (error) {
       console.log(error);
